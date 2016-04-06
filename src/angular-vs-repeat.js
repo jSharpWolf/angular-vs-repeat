@@ -374,7 +374,7 @@
 
                         function scrollHandler() {
                             if (updateInnerCollection()) {
-                                $scope.$digest();
+                                $scope.$evalAsync(angular.noop);
                             }
                         }
 
